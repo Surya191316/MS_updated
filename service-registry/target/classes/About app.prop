@@ -1,0 +1,26 @@
+Prevents this Eureka Server from registering itself as a client
+>> eureka.client.register-with-eureka=false
+
+Prevents this Eureka Server from fetching the registry information from itself
+This 'false' prevents this SERVICE-REGISTRY registering itself to this same server which is a
+default behavior so we are just disabling it.
+>> eureka.client.fetch-registry=false
+And if not given as false then, our Eureka Server will try to behave like a client.
+
+#EMERGENCY! EUREKA MAY BE INCORRECTLY CLAIMING INSTANCES ARE UP WHEN THEY'RE NOT. RENEWALS ARE LESSER THAN THRESHOLD AND HENCE THE INSTANCES ARE NOT BEING EXPIRED JUST TO BE SAFE.
+To avoid that preservation warning we can use below line
+>> eureka.server.enable-self-preservation=false
+Eureka expected some heartbeat signals from services, but it didn’t receive enough.
+So instead of removing services from registry, it enters something called Self-Preservation Mode.
+
+
+RENEWAL:
+Every registered service (Employee, Department) sends a heartbeat to Eureka every 30 seconds.
+Like saying: “Hey Eureka, I am still alive.”
+That heartbeat is called Renewal.
+
+THRESHOLD:
+Eureka calculates: “How many heartbeats should I receive per minute?”
+If actual heartbeats < expected threshold
+It assumes there might be: Network issue, Temporary glitch, Connection issues so now Instead of
+deleting services, it protects them.

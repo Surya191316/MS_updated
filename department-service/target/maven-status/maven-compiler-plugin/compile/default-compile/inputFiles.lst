@@ -1,8 +1,0 @@
-/Users/cm/Desktop/Project/New_MS/department-service/src/main/java/net/javaguides/departmentservice/DepartmentServiceApplication.java
-/Users/cm/Desktop/Project/New_MS/department-service/src/main/java/net/javaguides/departmentservice/controller/DepartmentController.java
-/Users/cm/Desktop/Project/New_MS/department-service/src/main/java/net/javaguides/departmentservice/controller/MessageController.java
-/Users/cm/Desktop/Project/New_MS/department-service/src/main/java/net/javaguides/departmentservice/dto/DepartmentDto.java
-/Users/cm/Desktop/Project/New_MS/department-service/src/main/java/net/javaguides/departmentservice/entity/Department.java
-/Users/cm/Desktop/Project/New_MS/department-service/src/main/java/net/javaguides/departmentservice/repository/DepartmentRepository.java
-/Users/cm/Desktop/Project/New_MS/department-service/src/main/java/net/javaguides/departmentservice/service/DepartmentService.java
-/Users/cm/Desktop/Project/New_MS/department-service/src/main/java/net/javaguides/departmentservice/service/impl/DepartmentServiceImpl.java

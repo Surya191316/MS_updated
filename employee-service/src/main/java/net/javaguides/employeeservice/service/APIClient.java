@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 // Whenever I call methods inside this interface, it makes an HTTP call.
 // Sends HTTP requests to that base URL.
 // value = "DEPARTMENT-SERVICE" This is just the name of the client bean.
-// If using Eureka: This must match spring.application.name of Department Service.
 public interface APIClient {
     @GetMapping("api/departments/{department-code}")
     DepartmentDto getDepartment(@PathVariable("department-code") String departmentCode);
